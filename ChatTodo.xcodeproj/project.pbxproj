@@ -20,11 +20,11 @@
 		FA5AC30E2AA9DE4500CFBBEB /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC30D2AA9DE4500CFBBEB /* NewMessageView.swift */; };
 		FA5AC3102AA9DECE00CFBBEB /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC30F2AA9DECE00CFBBEB /* NewMessageViewModel.swift */; };
 		FA5AC3122AAA28C000CFBBEB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC3112AAA28C000CFBBEB /* Message.swift */; };
-		FA5AC3142AAA2A2400CFBBEB /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC3132AAA2A2400CFBBEB /* MessageService.swift */; };
 		FA5AC3162AAA2DEA00CFBBEB /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC3152AAA2DEA00CFBBEB /* ChatViewModel.swift */; };
 		FA5AC3182AAAB0FA00CFBBEB /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC3172AAAB0FA00CFBBEB /* ChatService.swift */; };
 		FA5AC31B2AAAB39500CFBBEB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC31A2AAAB39500CFBBEB /* Constants.swift */; };
 		FA5AC31D2AAAB6BD00CFBBEB /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC31C2AAAB6BD00CFBBEB /* InboxService.swift */; };
+		FA5AC3212AAAC8A900CFBBEB /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AC3202AAAC8A900CFBBEB /* TodoView.swift */; };
 		FA8202692AA96450001C19E2 /* MainChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8202682AA96450001C19E2 /* MainChatView.swift */; };
 		FA82026B2AA978DE001C19E2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82026A2AA978DE001C19E2 /* ProfileViewModel.swift */; };
 		FA82026D2AA987A7001C19E2 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82026C2AA987A7001C19E2 /* CircularImageView.swift */; };
@@ -42,6 +42,13 @@
 		FAA156922AA873FC00E20A16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA156912AA873FC00E20A16 /* GoogleService-Info.plist */; };
 		FAA156942AA8CA6500E20A16 /* MainChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA156932AA8CA6500E20A16 /* MainChatViewModel.swift */; };
 		FAA156962AA8D02100E20A16 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA156952AA8D02100E20A16 /* InputTextFieldView.swift */; };
+		FAA295F62AAACDEE0073F82C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA295F52AAACDEE0073F82C /* Enums.swift */; };
+		FAB1EC272AAAD64600CC6745 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EC262AAAD64600CC6745 /* AddTaskView.swift */; };
+		FAB1EC2A2AAAF08000CC6745 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FAB1EC292AAAF08000CC6745 /* Realm */; };
+		FAB1EC2C2AAAF08000CC6745 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAB1EC2B2AAAF08000CC6745 /* RealmSwift */; };
+		FAB1EC2E2AAAF09E00CC6745 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EC2D2AAAF09E00CC6745 /* RealmManager.swift */; };
+		FAB1EC302AAAF17100CC6745 /* TaskEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EC2F2AAAF17100CC6745 /* TaskEntity.swift */; };
+		FAB1EC342AAAFCD800CC6745 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EC332AAAFCD800CC6745 /* TaskRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,11 +65,11 @@
 		FA5AC30D2AA9DE4500CFBBEB /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		FA5AC30F2AA9DECE00CFBBEB /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		FA5AC3112AAA28C000CFBBEB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		FA5AC3132AAA2A2400CFBBEB /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		FA5AC3152AAA2DEA00CFBBEB /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		FA5AC3172AAAB0FA00CFBBEB /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		FA5AC31A2AAAB39500CFBBEB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA5AC31C2AAAB6BD00CFBBEB /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		FA5AC3202AAAC8A900CFBBEB /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		FA8202682AA96450001C19E2 /* MainChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChatView.swift; sourceTree = "<group>"; };
 		FA82026A2AA978DE001C19E2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FA82026C2AA987A7001C19E2 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
@@ -77,6 +84,11 @@
 		FAA156912AA873FC00E20A16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAA156932AA8CA6500E20A16 /* MainChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChatViewModel.swift; sourceTree = "<group>"; };
 		FAA156952AA8D02100E20A16 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		FAA295F52AAACDEE0073F82C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FAB1EC262AAAD64600CC6745 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		FAB1EC2D2AAAF09E00CC6745 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		FAB1EC2F2AAAF17100CC6745 /* TaskEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEntity.swift; sourceTree = "<group>"; };
+		FAB1EC332AAAFCD800CC6745 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB1EC2C2AAAF08000CC6745 /* RealmSwift in Frameworks */,
 				FAA1568C2AA873D500E20A16 /* FirebaseAuth in Frameworks */,
 				FA4E975F2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				FAA1568E2AA873D500E20A16 /* FirebaseFirestore in Frameworks */,
 				FAA156902AA873D500E20A16 /* FirebaseStorage in Frameworks */,
+				FAB1EC2A2AAAF08000CC6745 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +111,9 @@
 		FA4E97642AA8F65500E27282 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				FA5AC3202AAAC8A900CFBBEB /* TodoView.swift */,
+				FAB1EC262AAAD64600CC6745 /* AddTaskView.swift */,
+				FAB1EC332AAAFCD800CC6745 /* TaskRow.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 				FA503EAA2AA6CF7E0060454E /* Assets.xcassets */,
 				FAA156912AA873FC00E20A16 /* GoogleService-Info.plist */,
 				FA5AC31A2AAAB39500CFBBEB /* Constants.swift */,
+				FAA295F52AAACDEE0073F82C /* Enums.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -214,9 +232,9 @@
 			children = (
 				FA8202712AA9A94B001C19E2 /* AuthenticationService.swift */,
 				FA8202792AA9B771001C19E2 /* UserService.swift */,
-				FA5AC3132AAA2A2400CFBBEB /* MessageService.swift */,
 				FA5AC3172AAAB0FA00CFBBEB /* ChatService.swift */,
 				FA5AC31C2AAAB6BD00CFBBEB /* InboxService.swift */,
+				FAB1EC2D2AAAF09E00CC6745 /* RealmManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -235,6 +253,7 @@
 			children = (
 				FA4E97602AA8E72600E27282 /* User.swift */,
 				FA5AC3112AAA28C000CFBBEB /* Message.swift */,
+				FAB1EC2F2AAAF17100CC6745 /* TaskEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +300,8 @@
 				FAA1568D2AA873D500E20A16 /* FirebaseFirestore */,
 				FAA1568F2AA873D500E20A16 /* FirebaseStorage */,
 				FA4E975E2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta */,
+				FAB1EC292AAAF08000CC6745 /* Realm */,
+				FAB1EC2B2AAAF08000CC6745 /* RealmSwift */,
 			);
 			productName = ChatTodo;
 			productReference = FA503EA32AA6CF7B0060454E /* ChatTodo.app */;
@@ -312,6 +333,7 @@
 			mainGroup = FA503E9A2AA6CF7B0060454E;
 			packageReferences = (
 				FAA1568A2AA873D500E20A16 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FAB1EC282AAAF08000CC6745 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = FA503EA42AA6CF7B0060454E /* Products */;
 			projectDirPath = "";
@@ -355,19 +377,24 @@
 				FA82026F2AA98E8B001C19E2 /* ChatView.swift in Sources */,
 				FA4E97612AA8E72600E27282 /* User.swift in Sources */,
 				FA5AC3162AAA2DEA00CFBBEB /* ChatViewModel.swift in Sources */,
-				FA5AC3142AAA2A2400CFBBEB /* MessageService.swift in Sources */,
 				FA8202742AA9AA0A001C19E2 /* LoginViewModel.swift in Sources */,
 				FA4E97632AA8E82600E27282 /* RootView.swift in Sources */,
 				FA5AC3182AAAB0FA00CFBBEB /* ChatService.swift in Sources */,
+				FA5AC3212AAAC8A900CFBBEB /* TodoView.swift in Sources */,
+				FAB1EC342AAAFCD800CC6745 /* TaskRow.swift in Sources */,
 				FA5AC3102AA9DECE00CFBBEB /* NewMessageViewModel.swift in Sources */,
 				FA8202692AA96450001C19E2 /* MainChatView.swift in Sources */,
+				FAA295F62AAACDEE0073F82C /* Enums.swift in Sources */,
 				FA5AC3122AAA28C000CFBBEB /* Message.swift in Sources */,
 				FA5AC30A2AA9D44D00CFBBEB /* ChatCellView.swift in Sources */,
+				FAB1EC302AAAF17100CC6745 /* TaskEntity.swift in Sources */,
 				FA503EA72AA6CF7B0060454E /* ChatTodoApp.swift in Sources */,
+				FAB1EC2E2AAAF09E00CC6745 /* RealmManager.swift in Sources */,
 				FA82026B2AA978DE001C19E2 /* ProfileViewModel.swift in Sources */,
 				FAA156772AA8324F00E20A16 /* RowSectionView.swift in Sources */,
 				FA8202722AA9A94B001C19E2 /* AuthenticationService.swift in Sources */,
 				FA5AC31B2AAAB39500CFBBEB /* Constants.swift in Sources */,
+				FAB1EC272AAAD64600CC6745 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +603,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		FAB1EC282AAAF08000CC6745 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.30.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -598,6 +633,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAA1568A2AA873D500E20A16 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		FAB1EC292AAAF08000CC6745 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB1EC282AAAF08000CC6745 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		FAB1EC2B2AAAF08000CC6745 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB1EC282AAAF08000CC6745 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

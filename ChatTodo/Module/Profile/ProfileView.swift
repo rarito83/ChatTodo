@@ -42,20 +42,18 @@ struct ProfileView: View {
         }
         
         Section("Features") {
-          Button {
-            print("To do list")
+          
+          NavigationLink {
+            TodoView()
           } label: {
             HStack {
               RowSectionView(image: "gear", title: "To Do List")
               Spacer()
-              Image(systemName: "arrowshape.right")
-                .foregroundColor(.blue)
             }
           }
           
           Button {
             dismiss()
-            print("Chat")
           } label: {
             HStack {
               RowSectionView(image: "gear", title: "Chat")

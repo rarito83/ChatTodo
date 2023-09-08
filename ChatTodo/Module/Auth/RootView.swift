@@ -15,6 +15,7 @@ struct RootView: View {
     Group {
       if viewModel.userSession != nil {
         MainChatView()
+//        TodoView()
       } else {
         LoginView()
       }
