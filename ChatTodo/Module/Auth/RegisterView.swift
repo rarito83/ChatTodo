@@ -9,11 +9,8 @@ import SwiftUI
 
 struct RegisterView: View {
 
-  @EnvironmentObject var viewModel: AuthViewModel
+  @StateObject var viewModel = RegisterViewModel()
   @Environment(\.dismiss) var dismiss
-    @State private var email = ""
-    @State private var fullName = ""
-    @State private var password = ""
   
     var body: some View {
       NavigationStack {
@@ -23,23 +20,22 @@ struct RegisterView: View {
             .scaledToFit()
             .padding(.vertical, 40)
  
-          InputTextFieldView(text: $email, title: "Email :", placeholder: "andra@gmail.com")
+          InputTextFieldView(text: $viewModel.email, title: "Email :", placeholder: "andra@gmail.com")
             .keyboardType(.emailAddress)
             .autocapitalization(.none)
             .padding(.bottom)
     
-          InputTextFieldView(text: $fullName, title: "Full Name :", placeholder: "Andra")
+          InputTextFieldView(text: $viewModel.fullName, title: "Full Name :", placeholder: "Andra")
             .padding(.bottom)
           
-          InputTextFieldView(text: $password, title: "Password :", placeholder: "123456", isSecureField: true)
+          InputTextFieldView(text: $viewModel.password, title: "Password :", placeholder: "123456", isSecureField: true)
           
           Spacer()
           
           Button {
             Task {
-              try await viewModel.registerAcc(withEmail: email, fullName: fullName, password: password)
+              try await viewModel.register()
             }
-            print("User Register with credentials \(email) | \(password)")
           } label: {
             VStack {
               Text("REGISTER")
@@ -76,12 +72,12 @@ struct RegisterView: View {
     }
 }
 
-extension RegisterView: AuthValidationFormProtocol {
+extension RegisterView: RegisterValidationFormProtocol {
   
   var formValidate: Bool {
-    return !email.isEmpty && !fullName.isEmpty && !password.isEmpty
-    && email.contains("@") && fullName.count > 1
-    && password.count > 5
+    return !viewModel.email.isEmpty && !viewModel.fullName.isEmpty && !viewModel.password.isEmpty
+    && viewModel.email.contains("@") && viewModel.fullName.count > 1
+    && viewModel.password.count > 5
   }
   
 }

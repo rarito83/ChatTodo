@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct User: Codable, Identifiable {
-  let id: String
+struct User: Codable, Identifiable, Hashable {
+  @DocumentID var uid: String?
   let fullName: String
   let email: String
+  let photoProfileUrl: String?
   
-  var initial: String {
-    let formatted = PersonNameComponentsFormatter()
-    if let component = formatted.personNameComponents(from: fullName) {
-      formatted.style = .abbreviated
-      return formatted.string(from: component)
-    }
-    return ""
+  var id: String {
+    return uid ?? NSUUID().uuidString
   }
+}
+
+extension User {
+  static let DEFAULT = User(fullName: "User Name", email: "default@gmail.com", photoProfileUrl: "Photo")
 }

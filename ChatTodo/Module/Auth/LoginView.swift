@@ -9,9 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
   
-  @EnvironmentObject var viewModel: AuthViewModel
-  @State private var email = ""
-  @State private var password = ""
+  @StateObject var viewModel = LoginViewModel()
   
     var body: some View {
       NavigationStack {
@@ -21,20 +19,19 @@ struct LoginView: View {
             .scaledToFit()
             .padding(.vertical, 60)
             
-          InputTextFieldView(text: $email, title: "Email :", placeholder: "andra@gmail.com")
+          InputTextFieldView(text: $viewModel.email, title: "Email :", placeholder: "andra@gmail.com")
             .keyboardType(.emailAddress)
             .autocapitalization(.none)
             .padding(.bottom)
           
-          InputTextFieldView(text: $password, title: "Password :", placeholder: "123456", isSecureField: true)
+          InputTextFieldView(text: $viewModel.password, title: "Password :", placeholder: "123456", isSecureField: true)
           
           Spacer()
           
           Button {
             Task {
-              try await viewModel.loginAcc(withEmail: email, password: password)
+              try await viewModel.login()
             }
-            print("User Login with exist credentials \(email) | \(password)")
           } label: {
             VStack {
               Text("LOGIN")
@@ -72,12 +69,12 @@ struct LoginView: View {
     }
 }
 
-extension LoginView: AuthValidationFormProtocol {
+extension LoginView: LoginValidationFormProtocol {
   
   var formValidate: Bool {
-    return !email.isEmpty && !password.isEmpty
-    && email.contains("@")
-    && password.count > 5
+    return !viewModel.email.isEmpty && !viewModel.password.isEmpty
+    && viewModel.email.contains("@")
+    && viewModel.password.count > 5
   }
   
 }

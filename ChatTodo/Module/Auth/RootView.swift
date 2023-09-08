@@ -9,12 +9,12 @@ import SwiftUI
 
 struct RootView: View {
   
-  @EnvironmentObject var viewModel: AuthViewModel
+  @StateObject var viewModel = RootViewModel()
   
   var body: some View {
     Group {
       if viewModel.userSession != nil {
-        ProfileView()
+        MainChatView()
       } else {
         LoginView()
       }
