@@ -12,7 +12,7 @@ struct User: Codable, Identifiable, Hashable {
   @DocumentID var uid: String?
   let fullName: String
   let email: String
-  let photoProfileUrl: String?
+  var photoProfileUrl: String?
   
   var id: String {
     return uid ?? NSUUID().uuidString

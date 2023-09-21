@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA4E975F2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FA4E975E2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta */; };
+		8DAFAAD52AB9B10500437916 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAFAAD42AB9B10500437916 /* ImageUploader.swift */; };
+		8DAFAAD72AB9B37C00437916 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAFAAD62AB9B37C00437916 /* FirebaseFirestoreSwift */; };
 		FA4E97612AA8E72600E27282 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E97602AA8E72600E27282 /* User.swift */; };
 		FA4E97632AA8E82600E27282 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E97622AA8E82600E27282 /* RootView.swift */; };
 		FA503EA72AA6CF7B0060454E /* ChatTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA503EA62AA6CF7B0060454E /* ChatTodoApp.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DAFAAD42AB9B10500437916 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		FA4E97602AA8E72600E27282 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA4E97622AA8E82600E27282 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FA503EA32AA6CF7B0060454E /* ChatTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,10 +100,10 @@
 			files = (
 				FAB1EC2C2AAAF08000CC6745 /* RealmSwift in Frameworks */,
 				FAA1568C2AA873D500E20A16 /* FirebaseAuth in Frameworks */,
-				FA4E975F2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				FAA1568E2AA873D500E20A16 /* FirebaseFirestore in Frameworks */,
 				FAA156902AA873D500E20A16 /* FirebaseStorage in Frameworks */,
 				FAB1EC2A2AAAF08000CC6745 /* Realm in Frameworks */,
+				8DAFAAD72AB9B37C00437916 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +237,7 @@
 				FA5AC3172AAAB0FA00CFBBEB /* ChatService.swift */,
 				FA5AC31C2AAAB6BD00CFBBEB /* InboxService.swift */,
 				FAB1EC2D2AAAF09E00CC6745 /* RealmManager.swift */,
+				8DAFAAD42AB9B10500437916 /* ImageUploader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -299,9 +302,9 @@
 				FAA1568B2AA873D500E20A16 /* FirebaseAuth */,
 				FAA1568D2AA873D500E20A16 /* FirebaseFirestore */,
 				FAA1568F2AA873D500E20A16 /* FirebaseStorage */,
-				FA4E975E2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta */,
 				FAB1EC292AAAF08000CC6745 /* Realm */,
 				FAB1EC2B2AAAF08000CC6745 /* RealmSwift */,
+				8DAFAAD62AB9B37C00437916 /* FirebaseFirestoreSwift */,
 			);
 			productName = ChatTodo;
 			productReference = FA503EA32AA6CF7B0060454E /* ChatTodo.app */;
@@ -381,6 +384,7 @@
 				FA4E97632AA8E82600E27282 /* RootView.swift in Sources */,
 				FA5AC3182AAAB0FA00CFBBEB /* ChatService.swift in Sources */,
 				FA5AC3212AAAC8A900CFBBEB /* TodoView.swift in Sources */,
+				8DAFAAD52AB9B10500437916 /* ImageUploader.swift in Sources */,
 				FAB1EC342AAAFCD800CC6745 /* TaskRow.swift in Sources */,
 				FA5AC3102AA9DECE00CFBBEB /* NewMessageViewModel.swift in Sources */,
 				FA8202692AA96450001C19E2 /* MainChatView.swift in Sources */,
@@ -600,7 +604,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		FAB1EC282AAAF08000CC6745 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
@@ -614,10 +618,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA4E975E2AA8E18900E27282 /* FirebaseFirestoreSwift-Beta */ = {
+		8DAFAAD62AB9B37C00437916 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAA1568A2AA873D500E20A16 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
+			productName = FirebaseFirestoreSwift;
 		};
 		FAA1568B2AA873D500E20A16 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

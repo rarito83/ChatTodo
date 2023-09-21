@@ -7,7 +7,7 @@
 
 import Foundation
 import Firebase
-import FirebaseFirestoreSwift
+//import FirebaseFirestoreSwift
 
 class AuthenticationService {
   
